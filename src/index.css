@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom styles */
+@layer base {
+  body {
+    @apply font-roboto; /* This will use Roboto as the default font */
+  }
+}
+
+/* Font family variables - Easy to change fonts later */
+:root {
+  --font-body: 'Roboto', sans-serif;
+}
+
+/* Apply the font */
+body {
+  font-family: var(--font-body);
+}
+
+/* Custom styles can go here */
+
